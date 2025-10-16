@@ -18,9 +18,7 @@ It replicates a small business network environment where the server manages DHCP
 
 
 ### 🧱 VirtualBox Network Configuration
-![VirtualBox Network Setup](./Screenshot 2025-10-16 103239.png)
-![VirtualBox Network Setup](./Windows Server Adapter 2 NAT.png)
-![VirtualBox Network Setup](./Screenshot 2025-10-16 103239.png)
+![VirtualBox Network Setup](./virtualbox_network_config.png)
 
 ---
 
@@ -59,10 +57,7 @@ It replicates a small business network environment where the server manages DHCP
 **![DHCP Scope Setup](./dhcp_scope.png)
 **---
 
-
-
-
-
+---
 ### 💻 Windows 10 Client (Client-Win10)
 **Tasks Performed:**
 1. Installed Windows 10 Enterprise on VirtualBox.
@@ -73,7 +68,6 @@ It replicates a small business network environment where the server manages DHCP
    ```bash
    ipconfig /release
    ipconfig /renew
-# IT-Support-Lab-Windows-Server
 
 ### 💻 Windows 10 Client IP Config
 ![Client IP Configuration](./client_ipconfig.png)
@@ -82,9 +76,18 @@ It replicates a small business network environment where the server manages DHCP
 ### 📡 Ethernet Connection Status
 ![Ethernet Status](./ethernet_status.png)
 
-
+---
 ### 🚀 Next Steps
 - Configure DNS Server on Windows Server 2022.
 - Promote Server to Domain Controller (lab.local).
 - Join Windows 10 client to the domain.
 - Manage users and permissions via Active Directory.
+
+  ---
+### 👨‍💻 Author
+
+Andrés Vanegas
+IT Support & Systems Enthusiast | 
+- 📍 London, UK
+- [🔗 LinkedIn](https://www.linkedin.com/in/andres-vanegas-033643305/)
+  
