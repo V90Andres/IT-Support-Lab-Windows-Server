@@ -16,6 +16,12 @@ It replicates a small business network environment where the server manages DHCP
   - Adapter 1: *Internal Network* (`labnet`)  
   - Adapter 2: *NAT* (for internet access)
 
+
+### 🧱 VirtualBox Network Configuration
+![VirtualBox Network Setup](./Screenshot 2025-10-16 103239.png)
+![VirtualBox Network Setup](./Windows Server Adapter 2 NAT.png)
+![VirtualBox Network Setup](./Screenshot 2025-10-16 103239.png)
+
 ---
 
 ## ⚙️ Configuration Summary
@@ -26,8 +32,14 @@ It replicates a small business network environment where the server manages DHCP
 - Active Directory Domain Services (AD DS)
 - DNS Server (to be configured next)
 
+
+### 🌐 Server IP Configuration
+![Server IP Config](./server_ipconfig.png)
+
+---
+
 **Tasks Performed:**
-1. Installed Windows Server 2022 Standard Evaluation.
+1. Installed Windows Server 2022 Standard Evaluation.      
 2. Configured two network adapters:
    - Adapter 1 (Internal): 192.168.10.1 — for internal lab communication.
    - Adapter 2 (NAT): for external internet connectivity.
@@ -37,10 +49,19 @@ It replicates a small business network environment where the server manages DHCP
    - Subnet Mask: `255.255.255.0`
    - Default Gateway: `192.168.10.1`
    - DNS Server: `192.168.10.1`
-4. Authorized and activated the DHCP server.
+4. Authorised and activated the DHCP server.
 5. Verified lease distribution and communication with the Windows 10 client.
 
----
+
+
+   ### ⚙️ DHCP Scope Setup
+   
+**![DHCP Scope Setup](./dhcp_scope.png)
+**---
+
+
+
+
 
 ### 💻 Windows 10 Client (Client-Win10)
 **Tasks Performed:**
@@ -53,3 +74,17 @@ It replicates a small business network environment where the server manages DHCP
    ipconfig /release
    ipconfig /renew
 # IT-Support-Lab-Windows-Server
+
+### 💻 Windows 10 Client IP Config
+![Client IP Configuration](./client_ipconfig.png)
+
+---
+### 📡 Ethernet Connection Status
+![Ethernet Status](./ethernet_status.png)
+
+
+### 🚀 Next Steps
+- Configure DNS Server on Windows Server 2022.
+- Promote Server to Domain Controller (lab.local).
+- Join Windows 10 client to the domain.
+- Manage users and permissions via Active Directory.
